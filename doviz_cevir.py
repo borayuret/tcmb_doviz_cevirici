@@ -1,1 +1,1 @@
-print('Merhaba Dolar')
+print('Merhaba Dolar/Euro')
