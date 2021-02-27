@@ -2,6 +2,7 @@
 # https://www.turkiye.gov.tr/doviz-kurlari
 
 from tkinter import *
+from tkinter import messagebox
 from bs4 import *
 import requests
 
@@ -48,6 +49,7 @@ def dolar_cevir():
 
     tl_miktar = dolar_text.get() * float(efektif_dolar_satis)
     tl_text.set(round(tl_miktar, 2))
+    messagebox.showinfo("Önemli", "TCMB Efektif Satış fiyatından çevrilmiştir!")
 
 
 # buton ekliyoruz.
